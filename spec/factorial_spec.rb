@@ -20,8 +20,7 @@ describe 'Solver' do
     end
 
     it 'the method factorial should throw an exception for negative integer' do
-      expect{ solver_obj.factorial(-5) }.to raise_error(TypeError)
+      expect { solver_obj.factorial(-5) }.to raise_error(TypeError)
     end
   end
 end
-
