@@ -1,9 +1,15 @@
 class Solver
-  def factorial(n)
-    if n.zero?
+  def factorial(number)
+    if number.zero?
       1
+    elsif number.negative?
+      raise TypeError, 'The number is negative'
     else
-      n * factorial(n - 1)
+      number * factorial(number - 1)
     end
+  end
+
+  def reverse_string(str)
+    str.reverse
   end
 end
